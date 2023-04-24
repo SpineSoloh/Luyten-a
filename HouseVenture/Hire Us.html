@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>House Ventures Website</title>
+    <link rel="stylesheet" href="HouseVenture.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.awsome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+  <Section class="sub-header">
+    <nav>
+      <a href="HouseVentures.html"><img src="HV11.png">
+      <div class="nav-area">
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Meet Us</a></li>
+                <li><a href="Hire Us.html">Make Order</a></li>
+            </ul>
+      </div>
+    </nav>
+    <h1>Make Order</h1>
+  </section>
+  <section>
+    <div class="container">
+      <input type="text" name="name" placeholder="Enter your name" required>
+      <input type="text" name="email" placeholder="Enter email address" required>
+      <input type="text" name="enquiry" placeholder="Enter order description/your enquiry" required>
+      <textarea rows="4" name="message" placeholder="To be precise, enter a message" required></textarea>
+      <button type="Hire" class="btn" onclick="openPopup()">Hire</button>
+      <div class="popup" id="popup">
+            <img src="tick.png">
+            <h2>Thank You!</h2>
+            <p>Your Request has been Succesfully Submitted.</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+  </Section>
+
+<Section class="end">
+  <p>House Ventures Staffing Consultant</p>
+</Section>
+<Section class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-youtube"></i>
+      <p>©CopyRight by House Ventures. Made by Spines</p>
+</Section>
+
+<script>
+let popup = document.getElementById('popup');
+
+function openPopup(){
+  popup.classList.add('open-popup');
+}
+function closePopup(){
+  popup.classList.remove('open-popup');
+}
+</script>
+
+</body>
+</html>
